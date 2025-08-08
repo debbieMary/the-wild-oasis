@@ -7,7 +7,6 @@ export default function Stats({ bookings, confirmedStays , numDays, cabinCount})
   const numBookings = bookings.length;
   const sales = bookings.reduce((acc,cur)=> acc + cur.totalPrice, 0);
   const checkIns = confirmedStays.length;
-  console.log("tus datos bitch",numDays, cabinCount)
   const occupation = confirmedStays.reduce((acc,cur)=> acc + cur.numNights, 0)/(numDays* cabinCount);
   return (
     <>
