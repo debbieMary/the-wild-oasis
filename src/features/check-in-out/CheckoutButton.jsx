@@ -3,7 +3,6 @@ import useCheckOut from "./useCheckOut"
 
 function CheckoutButton({ bookingId }) {
 
-  console.log("bookingiod en el cheout button", bookingId);
   const { checkout, isCheckingOut } = useCheckOut();
 
   return (

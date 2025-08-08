@@ -23,7 +23,6 @@ export async function getBookings({filter, sortBy, page}) {
       query = query.range(from, to);
     }
 
-    console.log("Consulta supabase:", query);
     const { data, error, count } = await query;
 
     if (error) {
