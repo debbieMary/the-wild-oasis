@@ -29,7 +29,7 @@ export default function UserAvatar() {
   if (!user) return <div>Not authenticated</div>;
 
   const { fullName, avatar } = user.user_metadata || {};
-  console.log("<3<3<3<3<3", user);
+
   
   return (
     <StyledUserAvatar>

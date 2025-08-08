@@ -8,6 +8,5 @@ export function useUser() {
   });
 
 
-console.log("concha de tu madre:" ,user);
   return { isLoadingUser, user, isAuthenticated: user?.role === "authenticated" };
 }
